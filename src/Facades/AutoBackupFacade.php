@@ -1,4 +1,4 @@
-<?php namespace barisbora\AutoBackup\Facades;
+<?php namespace barisbora\autobackup\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

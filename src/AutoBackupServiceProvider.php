@@ -1,4 +1,4 @@
-<?php namespace barisbora\AutoBackup;
+<?php namespace barisbora\autobackup;
 
 use Illuminate\Support\ServiceProvider;
 

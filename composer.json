@@ -1,5 +1,5 @@
 {
-    "name": "barisbora/fanout",
+    "name": "barisbora/autobackup",
     "description": "A simple Laravel 5 fanout.io service provider",
     "license": "MIT",
     "authors": [
@@ -10,12 +10,11 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": ">=5.0",
-        "fanout/fanout": "^2.0.0"
+        "illuminate/support": ">=5.0"
     },
     "autoload": {
         "psr-4": {
-            "barisbora\\Fanout\\": "src/"
+            "barisbora\\autobackup\\": "src/"
         }
     }
 }

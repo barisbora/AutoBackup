@@ -16,11 +16,10 @@ class AutoBackupFactory
 
     }
 
-    public function start ()
+    public function baslat ()
     {
         echo 'aaa';
 
-        return $this;
     }
 
 }

@@ -15,8 +15,6 @@ class AutoBackupServiceProvider extends ServiceProvider
     public function boot ()
     {
 
-        dd( 'a' );
-
         $this->publishes( [
             __DIR__ . '/config/backup.php' => config_path( 'backup.php' ),
         ] );
@@ -32,9 +30,6 @@ class AutoBackupServiceProvider extends ServiceProvider
 
         $this->app[ 'AutoBackup' ] = $this->app->share( function ( $app )
         {
-
-            dd( 'b' );
-
             $config = config( 'backup' );
 
             if ( ! $config )

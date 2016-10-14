@@ -6,6 +6,10 @@ class AutoBackupFactory
 
     protected $config;
 
+    protected $token;
+    protected $apiUrl;
+    protected $downloadUrl;
+
     /**
      * @param $config
      */
@@ -18,7 +22,12 @@ class AutoBackupFactory
 
     public function baslat ()
     {
-        echo 'aaa';
+
+        $backBlaze = BackBlaze::connect( $this->config[ 'account_id' ], $this->config[ 'application_key' ], $this->config[ 'bucket_id' ] )
+            ->authorize()
+            ->upload( public_path('aa.rtf'), public_path('robots.txt') );
+
+        dd($backBlaze);
 
     }
 

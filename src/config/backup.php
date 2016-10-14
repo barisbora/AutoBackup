@@ -2,8 +2,9 @@
 
 return [
 
-    'realm-id'  => '', // your realm-id
-    'realm-key' => '', // your realm-key
-    'ssl'       => true
+    /// backblaze.com
+    'account_id'      => '',
+    'application_key' => '',
+    'bucket_id'       => '',
 
 ];
